@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Workout Routines - The Developer's Den</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+                body.post2-page {
+            background-color: lightgrey; /* Set background color to lightgrey */
+        }
+                .read-more-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            margin: 20px 0;
+        }
+        .read-more-btn:hover {
+            background-color: #0056b3;
+        }
+                .more-content {
+            display: none;
+            margin: 20px 0;
+        }
+        .show-more .more-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body class="post2-page">
+    <!-- Fixed Header -->
+    <header>
+        <div class="header-content">
+            <h1>Home Workout Routines</h1>
+            <p>Stay Fit Without Leaving Your Home</p>
+        </div>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)">Blogs</a>
+                    <div class="dropdown-content">
+                        <a href="post1.html">Beginner's Guide to Fitness</a>
+                        <a href="post2.html">Home Workout Routines</a>
+                        <a href="post3.html">Nutrition and Fitness</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Scrollable Content Area -->
+    <div class="content-wrapper">
+        <main id="main-content">
+            <section id="section1">
+                <h2>Home Workout Routines</h2>
+                <p><em>By Kavya, August 17, 2024</em></p>
+
+                <img src="C:/Users/kavya/OneDrive/Desktop/BLOG/fitness3.png" alt="Home Workout Image" class="featured-image">
+                <p>Working out at home has become increasingly popular, offering convenience and flexibility without the need for a gym membership. Whether you're short on time or prefer the comfort of your home, these routines will help you stay fit and healthy.</p>
+                
+                <h3>Bodyweight Exercises</h3>
+                <p>Bodyweight exercises are a fantastic way to build strength and endurance without any equipment. Some key exercises include push-ups, squats, lunges, and planks. These moves can be done anywhere and can be modified to match your fitness level.</p>
+
+                <h3>HIIT Workouts</h3>
+                <p>High-Intensity Interval Training (HIIT) is an effective way to burn calories and improve cardiovascular health in a short amount of time. A typical HIIT workout includes short bursts of intense exercise followed by brief rest periods. You can incorporate exercises like jumping jacks, burpees, and mountain climbers into your routine.</p>
+
+                <h3>Yoga and Stretching</h3>
+                <p>Yoga and stretching are great for improving flexibility, reducing stress, and enhancing mental well-being. You don't need much space or equipment, just a mat or towel. Start with basic poses like downward dog, child's pose, and warrior pose, and gradually progress to more advanced stretches.</p>
+
+                <!-- Read More Section -->
+                <div id="more-content" class="more-content">
+                    <h3>Resistance Band Workouts</h3>
+                    <p>Resistance bands are versatile tools that can add intensity to your home workouts. They are perfect for targeting specific muscle groups and can be easily stored away. Use bands for exercises like bicep curls, tricep extensions, and leg lifts to build strength and tone your body.</p>
+
+                    <h3>Creating a Routine</h3>
+                    <p>Consistency is key to seeing results. Create a routine that includes a mix of the exercises mentioned above. Aim for at least 30 minutes of exercise most days of the week. Remember to warm up before starting and cool down after your workout to prevent injury.</p>
+
+                    <p>By incorporating these home workout routines into your schedule, you can stay fit and healthy without ever leaving your house. All you need is a little space, some motivation, and a commitment to making your health a priority.</p>
+                </div>
+
+                <button class="read-more-btn" onclick="toggleContent()">Read More</button>
+            </section>
+        </main>
+    </div>
+
+    <!-- Fixed Footer -->
+    <footer>
+        <h4>Contact: info@developersden.com | Follow us on 
+            <a href="#">Twitter</a>, 
+            <a href="#">Facebook</a>, 
+            <a href="#">Instagram</a>
+            &copy; 2024 The Developer's Den. All rights reserved.
+        </h4>
+    </footer>
+
+    <script>
+        function toggleContent() {
+            var content = document.getElementById('more-content');
+            var button = document.querySelector('.read-more-btn');
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+                button.textContent = 'Read More';
+            } else {
+                content.style.display = 'block';
+                button.textContent = 'Read Less';
+            }
+        }
+    </script>
+</body>
+
+</html>

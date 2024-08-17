@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginner's Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body.post1-page {
+            background-color: lavender;
+        }
+        .read-more-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            margin: 20px 0;
+        }
+        .read-more-btn:hover {
+            background-color: #0056b3;
+        }
+        .more-content {
+            display: none;
+            margin: 20px 0;
+        }
+        .show-more .more-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body class="post1-page">
+    <header>
+        <div class="header-content">
+            <h1>Beginner's Guide to Fitness</h1>
+            <p>Kickstart Your Journey to a Healthier You</p>
+        </div>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)">Blogs</a>
+                    <div class="dropdown-content">
+                        <a href="post1.html">Beginner's Guide to Fitness</a>
+                        <a href="post2.html">Home Workout Routines</a>
+                        <a href="post3.html">Nutrition and Fitness</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content-wrapper">
+        <main id="main-content" class="post1-page">
+            <section id="section1">
+                <h2>Beginner's Guide to Fitness</h2>
+                <p><em>By Kavya, August 17, 2024</em></p>
+                <img src="C:\Users\kavya\OneDrive\Desktop\BLOG\fitness2.png" alt="Fitness Image" class="featured-image">
+                <p>Starting a fitness journey can be daunting, but with the right mindset and approach, you can set yourself up for success. Whether you want to lose weight, build muscle, or improve your overall health, this guide will help you navigate the basics of fitness.</p>
+                
+                <h3>Setting Realistic Goals</h3>
+                <p>The first step is to set achievable and realistic goals. Consider what you want to accomplish and create a plan that aligns with your lifestyle and fitness level. Start with small, manageable goals, and gradually increase the intensity and duration of your workouts.</p>
+
+                <h3>Understanding the Basics</h3>
+                <p>Before diving into any fitness routine, it's essential to understand the basic components of fitness: cardiovascular exercise, strength training, flexibility, and balance. A well-rounded fitness program includes all these elements to ensure overall health and wellness.</p>
+
+                <h3>Finding the Right Workout</h3>
+                <p>There are countless workout options available, from running and cycling to yoga and weightlifting. Choose activities that you enjoy and that fit your goals. Consistency is key, so finding something you like will help you stick with your routine.</p>
+
+                <div id="more-content" class="more-content">
+                    <h3>Staying Motivated</h3>
+                    <p>Motivation can be a challenge, especially in the beginning. Track your progress, celebrate small victories, and remind yourself of why you started. Joining a fitness community or working out with a friend can also keep you accountable and motivated.</p>
+
+                    <h3>Listening to Your Body</h3>
+                    <p>It's important to listen to your body and avoid pushing yourself too hard, especially when you're just starting. Pay attention to how you feel during and after workouts, and give yourself time to recover. Remember, fitness is a journey, not a sprint.</p>
+
+                    <p>With dedication and patience, you can build a fitness routine that works for you. Remember, the most important thing is to stay consistent and enjoy the process.</p>
+                </div>
+
+                <button class="read-more-btn" onclick="toggleContent()">Read More</button>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <h4>Contact: info@developersden.com | Follow us on 
+            <a href="#">Twitter</a>, 
+            <a href="#">Facebook</a>, 
+            <a href="#">Instagram</a>
+            &copy; 2024 The Developer's Den. All rights reserved.
+        </h4>
+    </footer>
+
+    <script>
+        function toggleContent() {
+            var content = document.getElementById('more-content');
+            var button = document.querySelector('.read-more-btn');
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+                button.textContent = 'Read More';
+            } else {
+                content.style.display = 'block';
+                button.textContent = 'Read Less';
+            }
+        }
+    </script>
+</body>
+
+</html>

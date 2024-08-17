@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition and Fitness - The Developer's Den</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        /* Internal CSS to set background color */
+        body.post3-page {
+            background-color: lightblue; /* Set background color to lightblue */
+        }
+        /* Style for the Read More button */
+        .read-more-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            margin: 20px 0;
+        }
+        .read-more-btn:hover {
+            background-color: #0056b3;
+        }
+        /* Style for hidden content */
+        .more-content {
+            display: none;
+            margin: 20px 0;
+        }
+        .show-more .more-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body class="post3-page">
+    <!-- Fixed Header -->
+    <header>
+        <div class="header-content">
+            <h1>Nutrition and Fitness</h1>
+            <p>The Key to Achieving Your Fitness Goals</p>
+        </div>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)">Blogs</a>
+                    <div class="dropdown-content">
+                        <a href="post1.html">Beginner's Guide to Fitness</a>
+                        <a href="post2.html">Home Workout Routines</a>
+                        <a href="post3.html">Nutrition and Fitness</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Scrollable Content Area -->
+    <div class="content-wrapper">
+        <main id="main-content">
+            <section id="section1">
+                <h2>Nutrition and Fitness</h2>
+                <p><em>By Kavya, August 17, 2024</em></p>
+                <img src="C:/Users/kavya/OneDrive/Desktop/BLOG/fitness4.jpeg" alt="Nutrition Image" class="featured-image">
+                <p>Proper nutrition is a crucial component of any successful fitness plan. The food you eat provides the energy and nutrients your body needs to perform during workouts and recover afterward. Understanding how to balance your diet with your fitness goals is essential for achieving the results you desire.</p>
+                
+                <h3>The Importance of Macronutrients</h3>
+                <p>Macronutrients—proteins, carbohydrates, and fats—are the building blocks of your diet. Each plays a specific role in supporting your fitness goals. Protein is vital for muscle repair and growth, carbohydrates provide energy for workouts, and healthy fats support overall body function.</p>
+
+                <h3>Meal Timing and Frequency</h3>
+                <p>When you eat can be just as important as what you eat. Eating small, balanced meals throughout the day can help maintain energy levels and support metabolism. Pre-workout nutrition should focus on providing energy, while post-workout meals should focus on recovery and replenishing nutrients.</p>
+
+                <h3>Hydration and Fitness</h3>
+                <p>Staying hydrated is essential for optimal performance during exercise. Water helps regulate body temperature, lubricates joints, and transports nutrients throughout the body. Make sure to drink water before, during, and after workouts to stay properly hydrated.</p>
+
+                <!-- Read More Section -->
+                <div id="more-content" class="more-content">
+                    <h3>Supplements: Do You Need Them?</h3>
+                    <p>While a balanced diet should provide most of the nutrients your body needs, some people consider supplements to fill in nutritional gaps. Common supplements for fitness enthusiasts include protein powders, BCAAs, and multivitamins. However, it's important to consult with a healthcare professional before adding supplements to your routine.</p>
+
+                    <h3>Creating a Balanced Diet Plan</h3>
+                    <p>To achieve your fitness goals, create a diet plan that aligns with your specific needs and preferences. Focus on whole, nutrient-dense foods like lean proteins, whole grains, fruits, and vegetables. Avoid processed foods and empty calories that can hinder your progress.</p>
+
+                    <p>Nutrition and fitness go hand in hand. By paying attention to what you eat and when you eat, you can fuel your workouts and optimize your performance, helping you reach your fitness goals more effectively.</p>
+                </div>
+
+                <button class="read-more-btn" onclick="toggleContent()">Read More</button>
+            </section>
+        </main>
+    </div>
+
+    <!-- Fixed Footer -->
+    <footer>
+        <h4>Contact: info@developersden.com | Follow us on 
+            <a href="#">Twitter</a>, 
+            <a href="#">Facebook</a>, 
+            <a href="#">Instagram</a>
+            &copy; 2024 The Developer's Den. All rights reserved.
+        </h4>
+    </footer>
+
+    <script>
+        function toggleContent() {
+            var content = document.getElementById('more-content');
+            var button = document.querySelector('.read-more-btn');
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+                button.textContent = 'Read More';
+            } else {
+                content.style.display = 'block';
+                button.textContent = 'Read Less';
+            }
+        }
+    </script>
+</body>
+
+</html>
